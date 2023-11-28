@@ -1,6 +1,37 @@
-\section{Research Plan and Expected Outcomes}\label{sec:research_plan}
-\subsection{Platform and resource for predictive modelling}\label{ssec:platform}
-\subsection{Development of normative / unsupervised predictome technology}\label{ssec:predictome}
-\subsection{Clinical validation, enhanced diagnostic precision and the identification of novel illness subtypes}\label{ssec:clinical_validation}
-\subsection{Longitudinal Inference}\label{ssec:longitudinal_inference}
-\subsection{Fairness: children, under representative}\label{ssec:fairness}
+\section{Objective and Expected Deliverables}\label{sec:research_plan}
+
+% multi-modal data platform
+\subsection{Multi-modal Data Platform for Predictive Modelling}\label{ssec:platform}
+\textbf{\underline{Objective:}} Addressing the challenges posed by the exponential growth of brain imaging data, our primary objective is to co-develop a robust data resource for biological and brain imaging information. This resource will curate diverse cohorts crucial for advancing modeling technologies, aiming to expand our existing brain imaging repository of over 50,000 scans through collaboration with national and international partners. We have established collaborations with scientist at the Radboud university in Nijmegen, the Netherlands (Prof. Marquand, Prof. Franke, Prof Beckmann, Prof. Buitelaar, Prof. Greven), the university of Oslo, Norway (Prof. Westlye, Prof. Andreassen), the national institute of mental health and neuroscience in Bangalore, India, and the University of Oxford, UK and many other places. Leveraging expertise and resources from multidisciplinary collaborators, we will efficiently process and annotate new open-source samples, fostering a comprehensive multi-modal platform for predictive modeling in mental health research.
+\noindent\\
+\textbf{\underline{Deliverables:}}
+1) Curated multi-modal biological and brain imaging dataset exceeding 100,000 scans.
+2) Streamlined data processing pipeline for efficient and standardized data handling.
+\noindent\\
+\textbf{\underline{Challenges and Mitigation Strategies:}}
+1) Data Heterogeneity: Handling diverse data sources and modalities poses a significant challenge. To address this, our collaborative efforts will focus on harmonizing data formats, establishing robust preprocessing pipelines, and developing fusion techniques to integrate information across modalities seamlessly.
+
+
+% represenation learning methodologies
+\subsection{Development of Representation Learning Methodologies across Modalities}\label{ssec:predictome}
+\textbf{\underline{Objective:}} Expanding representation learning techniques across diverse imaging modalities is paramount to derive nuanced insights into mental health conditions. Our aim is to employ sophisticated unsupervised and self-supervised learning methods, such as Contrastive Predictive Coding (CPC) and Variational Autoencoders (VAEs), to extract meaningful representations from heterogeneous data without reliance on labeled information. Furthermore, integrating cutting-edge anomaly detection techniques into our representation learning frameworks will enable a more comprehensive understanding of disease comorbidity. By identifying and characterizing anomalies within single-modal and multimodal data spaces, we aim to delineate distinct disease subtypes and variations, thereby refining our ability to categorize and predict individual-level responses to interventions.
+\noindent\\
+\textbf{\underline{Deliverables:}}
+1 ) Enhanced Disease Subtype Characterization: By uncovering subtle anomalies and patterns within multimodal data, our approach will provide deeper insights into the heterogeneity of mental health disorders. This will aid in refining disease subtype categorization, potentially leading to more tailored and effective treatment strategies.
+2) Individual-Level Predictive Models: The development of individual-level prediction models based on the comprehensive predictome will empower clinicians with personalized tools for prognosis and treatment planning. These models will consider the complex interplay of various modalities, offering a more holistic view of an individual's mental health status and response to interventions.
+\noindent\\
+\textbf{\underline{Challenges and Mitigation Strategies:}}
+1) Model Interpretability: Interpretability of complex representation learning models is crucial for clinical adoption. We will employ techniques such as attention mechanisms and B-cos\cite{bohle2023holistically} frameworks to ensure transparency and enhance the clinical utility of our predictive models.
+
+
+% longitudinal inference
+\subsection{Clinical Validation of Longitudinal Inference}\label{ssec:longitudinal_inference}
+\textbf{\underline{Objective:}} Longitudinal studies play a pivotal role in understanding the trajectory of mental health conditions, especially in assessing short-term changes due to interventions like pharmacological treatments or behavioral therapies. However, existing models often lack the granularity required to capture subtle yet crucial changes occurring within shorter intervals. Our primary objective is to pioneer advanced time series modeling methods, such as graphical models, recurrent neural networks (RNNs), and attention-based models enabling precise and granular longitudinal inference with high temporal resolution. By initially applying these models to the ABCD\cite{casey2018adolescent} dataset, a large-scale population-based dataset of children and adolescents followed longitudinally, we will validate and refine our models, paving the way for clinical application and translation.
+\noindent\\
+\textbf{\underline{Deliverables:}}
+1) Improved Disease Progression Estimation: Our refined longitudinal models will contribute to a deeper understanding of disease progression trajectories, aiding clinicians in better comprehending the course and evolution of various mental health conditions.
+2) Individual-Level Longitudinal Changes Post-Intervention: By applying our refined models to assess individual-level longitudinal changes post-intervention, we anticipate providing unparalleled insights into treatment efficacy and individual response patterns. This will significantly enhance pharmaceutical imaging studies and offer personalized interventions, thereby advancing precision medicine in mental health care.
+\noindent\\
+\textbf{\underline{Challenges and Mitigation Strategies:}}
+1) Clinical Translation and Utility: Ensuring clinical utility and ease of integration into clinical practice is critical. We will collaborate closely with healthcare professionals to tailor our longitudinal inference models to their needs, emphasizing interpretability and usability in real-world settings.
+2) Ethical Considerations in Longitudinal Data Analysis: Upholding ethical standards in handling longitudinal data requires robust privacy safeguards and adherence to ethical guidelines. We will implement strict protocols to protect patient privacy and ensure responsible data usage throughout the research process.

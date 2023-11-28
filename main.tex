@@ -1,9 +1,11 @@
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{url, hyperref}
 \usepackage{cite}
 \usepackage{titling}
 \usepackage[super,sort&compress]{natbib}
+\usepackage{enumitem}
+\usepackage{lmodern}
 
 
 
@@ -19,7 +21,8 @@
   \vskip .25em plus .1em minus .1em% decrease the vertical spacing between title and line
 }
 
-\title{Brain Based Predictive Machines for Mental Health Mapping}
+% \title{Brain Based Predictive Machines for Mental Health Mapping}
+\title{Advancing Precision Psychiatry: Brain Based Predictive Machines for Population-Scale Mental Health Mapping}
 \author{}
 \date{\vspace{-6em}}
 
@@ -41,10 +44,11 @@
 \input{sections/3.previous_works.tex}
 
 % references
-\bibliographystyle{unsrtnat} % Specify the bibliography style (here using natbib)
+% \bibliographystyle{unsrtnat} % Specify the bibliography style (here using natbib)
+\bibliographystyle{unsrtnat_maxbibnames4}
 \begingroup
-\setlength{\bibsep}{0.2\baselineskip}
-\bibliography{ref} % Include your .bib file (change 'references' to your actual .bib file name)
+\setlength{\bibsep}{0\baselineskip}
+\small{\bibliography{ref}} % Include your .bib file (change 'references' to your actual .bib file name)
 \endgroup
 
 
