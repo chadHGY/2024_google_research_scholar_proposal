@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{url, hyperref}
+\usepackage{cite}
+\usepackage{titling}
+\usepackage[super,sort&compress]{natbib}
+
+
+
+\pretitle{% add some rules
+  \begin{center}
+    \Large\bfseries
+    \vspace{-4em} % Adjust the space before the title
+}%, make the fonts bigger, make the title (only) bold
+\posttitle{%
+  \end{center}%
+  \vspace{-1em}
+  \noindent\vrule height 2.5pt width \textwidth
+  \vskip .25em plus .1em minus .1em% decrease the vertical spacing between title and line
+}
+
+\title{Brain Based Predictive Machines for Mental Health Mapping}
+\author{}
+\date{\vspace{-6em}}
+
+\begin{document}
+\maketitle
+\noindent
+\textbf{Principal Investigator:} Thomas Wolfers \\
+\textbf{Co-Principal Investigator:} Hao-Chun Yang \\
+\textbf{HomePage:} \url{https://mhm-lab.github.io} \\
+\textbf{Email:} dr.thomas.wolfers@gmail.com \\
+\textbf{Phone:} +4917684649464 \\
+\textbf{Affiliations:} 1) Department of Psychiatry and Psychotherapy 2) German Center for Mental Health partner Tübingen 3) Cluster of Excellence Machine Learning 4) IMPRS-IS, Tübingen, Germany
+
+
+% main sections
+\input{sections/0.abstract.tex}
+\input{sections/1.problem_statement.tex}
+\input{sections/2.research_plan.tex}
+\input{sections/3.previous_works.tex}
+
+% references
+\bibliographystyle{unsrtnat} % Specify the bibliography style (here using natbib)
+\begingroup
+\setlength{\bibsep}{0.2\baselineskip}
+\bibliography{ref} % Include your .bib file (change 'references' to your actual .bib file name)
+\endgroup
+
+
+
+
+\end{document}
